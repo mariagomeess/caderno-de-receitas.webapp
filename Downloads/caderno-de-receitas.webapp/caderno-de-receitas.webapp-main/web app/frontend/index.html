@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caderno de Receitas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+            <h1>Minhas Receitas</h1>
+                </header>
+                                
+                    <main>
+                        <section id="formulario-receita">
+                            <h2>Adicionar Nova Receita</h2>
+                                <form id="nova-receita-form">
+                                    <label for="nome-receita">Nome da Receita:</label>
+                                        <input type="text" id="nome-receita" name="nome-receita" required>
+                                
+                                            <label for="ingredientes">Ingredientes:</label>
+                                                <textarea id="ingredientes" name="ingredientes" required></textarea>
+                                
+                                                <label for="preparo">Modo de Preparo:</label>
+                                                <textarea id="preparo" name="preparo" required></textarea>
+                                
+                                                <button type="submit">Adicionar Receita</button>
+                                            </form>
+                                        </section>
+                                
+                                        <section id="lista-receitas">
+                                            <h2>Receitas Cadastradas</h2>
+                                            <ul id="receitas"></ul>
+                                        </section>
+                                    </main>
+                                
+                                    <script src="scripts.js"></script>               
+</body>
+</html>
