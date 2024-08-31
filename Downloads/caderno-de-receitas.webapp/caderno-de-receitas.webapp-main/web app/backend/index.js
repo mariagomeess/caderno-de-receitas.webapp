@@ -5,7 +5,7 @@ document.getElementById('nova-receita-form').addEventListener('submit', async fu
     const ingredientes = document.getElementById('ingredientes').value;
     const preparo = document.getElementById('preparo').value;
 
-    const response = await fetch('http://localhost:5000/api/cadernodereceitas', {  // Atualize o URL para o backend
+    const response = await fetch('http://localhost:5000/api/receitas', { 
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -20,7 +20,7 @@ document.getElementById('nova-receita-form').addEventListener('submit', async fu
 
 // Função para buscar todas as receitas
 async function fetchReceitas() {
-    const response = await fetch('http://localhost:5000/api/cadernodereceitas');
+    const response = await fetch('http://localhost:5000/api/receitas');
     const receitas = await response.json();
     receitas.forEach(addReceitaToList);
 }
